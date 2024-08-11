@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <extended-header></extended-header>
+    <section class="products py-5 my-5" id="products"> 
+        <div class="container-fluid"> 
+            <div class="section_title text-center mb-5"> 
+                <h1 class="text-capitalize">Products</h1> 
+            </div> 
+            <div class="row"> 
+                <div class="col-md-3 border-right mb-small-5"> 
+                    <h4 class="mb-5 border-bottom">Filters</h4> 
+                    <div class="mb-5"> 
+                        <label><b>Category</b></label> 
+                        <ul class="list-group"> 
+                            <!-- Categories will be rendered here -->
+                        </ul> 
+                    </div> 
+                    <div> 
+                        <form> 
+                            <div class="form-group"> 
+                                <label><b>Price</b></label> 
+                                <input type="range" min="100" max="1000" step="100" class="form-control-range"> 
+                            </div> 
+                        </form> 
+                        <div class="d-flex justify-content-between"> 
+                            <label>₹100</label> 
+                            <label>₹1000</label> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col-md-9"> 
+                    <div class="row mb-5"> 
+                        <!-- Products will be rendered here -->
+                    </div> 
+                    <div class="pagination justify-content-center mt-4">
+                        <!-- Pagination controls will be rendered here -->
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+    <extended-footer></extended-footer>
+    <script src="./headerfooter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="./productapi.js"></script>
+</body>
+</html>
